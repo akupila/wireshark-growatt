@@ -24,6 +24,8 @@ exist.
 
 When installed, reload the lua plugins with cmd-shift-l or ctrl-shift-l.
 
+You can now look at the [sample data](./data) to see how this works.
+
 ## Redirecting traffic
 
 By default, the wifi module will send data directly to Growatt's server at
