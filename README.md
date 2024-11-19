@@ -20,9 +20,9 @@ is all guesswork.
 
 Copy `growatt.lua` to the [Wireshark plugin folder]
 (`~/.local/lib/wireshark/plugins` on MacOS). Create the folder if it doesn't
-exist.
+exist. Lua 5.3 is required, which means it works for Wireshark 4.4.0 and newer.
 
-When installed, reload the lua plugins with cmd-shift-l or ctrl-shift-l.
+When installed, reload the lua plugins with `cmd-shift-L` or `ctrl-shift-L`.
 
 You can now look at the [sample data](./data) to see how this works.
 

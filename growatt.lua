@@ -51,7 +51,7 @@ local function unscramble(data)
   for i = 0, data:len() - 1 do
     local nthData = data(i, 1):uint()
     local nthKey = key:byte(i % #key + 1)
-    local v = bit32.bxor(nthData, nthKey)
+    local v = nthData ~ nthKey
     out[i + 1] = string.format("%02x", v)
   end
   return ByteArray.new(table.concat(out)):tvb()
